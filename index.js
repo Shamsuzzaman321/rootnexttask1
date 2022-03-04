@@ -53,3 +53,67 @@ function change_cover(){
     setTimeout("change_cover()",time*1000);
     
 }
+function dis_navi(){
+    let w = window.innerWidth;
+
+    document.getElementById("search_box").style.width="70%";
+    if (w<750){
+        document.getElementById("navi_bar").style.position="unset";
+        document.getElementById("space").style.padding="1px";
+    }
+    else{
+        document.getElementById("navi_bar").style.position="fixed";
+        document.getElementById("space").style.padding="40px";
+    }
+}
+
+/* zoom item images */
+function zoom_img(id,x){
+    if (id=="t5"){
+        if (x=="30"){
+            document.getElementById("t1").style.width=10;
+        }
+        document.getElementById("t1").style.width=20;
+    }
+    document.getElementById(id).style.width=x;
+}
+
+/* open popup box when user click item */
+function open_popup(item_name,item_price){
+    document.getElementById("popup_item").style.transform="translate(-50%,-50%) scale(1)";
+    document.getElementById("overlay").style.opacity=1;
+    document.getElementById("overlay").style.pointerEvents=("all");
+    document.getElementById("popup_item_titile").innerText=item_name;
+    document.getElementById("popup_item_price").innerText=item_price;
+
+}
+function close_popup(){
+    document.getElementById("popup_item").style.transform="translate(-50%,-50%) scale(0)";
+    document.getElementById("overlay").style.opacity=0;
+    document.getElementById("overlay").style.pointerEvents=("none");
+}
+
+/* Cart item counting  and handel popup box buttons*/
+var cart_item_count=0;
+
+function add2cart(){
+    var qty= document.getElementById("qty").value;
+    if (qty>0){
+        close_popup();
+        cart_item_count=cart_item_count+1;
+        document.getElementById("cart").innerText=cart_item_count;
+    }
+    else{
+        alert("Quntity must be grater than 0")
+    }
+    
+}
+function buynow(){
+    var qty= document.getElementById("qty").value;
+    if (qty>0){
+        close_popup();
+    }
+    else{
+        alert("Quntity must be grater than 0")
+    }
+}
