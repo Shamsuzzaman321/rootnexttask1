@@ -92,5 +92,33 @@
            
     </div>
 </div>    
+
+
+    
+    <div class="popup_item" id="popup_item">
+        <div class="popup_item_h">
+                <label style="text-align: center;" id="popup_item_titile"> </label>
+                <input type="button" value="X" style="font-weight: bold ;text-align: right;background-color: rgb(247, 157, 157);" onclick="close_popup()">
+        </div>
+        <div class="popup_item_b">
+            Price : Lkr. 
+            <label id="popup_item_price"> </label> /=
+            <br><br>
+            <label> Quntity : </label>
+            <input type="number" id="qty" value=1 style="width: 50px;background-color:#e1f14d;font-weight: bold;">
+        </div>
+        <div class="popup_item_buttions">
+            <input type="button" id="add2cart" onclick="add2cart()"value="Add to cart" class="popup_item_buttions_2" style="align-items: left;">
+            &nbsp;
+            <input type="button" id="buynow" onclick="buynow()" value=" Buy Now " class="popup_item_buttions_2" style="align-items: right;">
+        </div>
+    </div>
+    <div  id="overlay"></div>
+
+
+</body>
+</html>
+
+
 </body>
 </html>

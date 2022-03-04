@@ -60,3 +60,89 @@ select {
 h3 {
 	margin:auto;
 }
+
+.link{
+	color:#030964;
+	font-size: medium;
+	text-align:left;
+	margin: auto;
+}
+.cato_left{
+	font-size: large;
+	max-width:150px;
+	margin: auto;
+}
+
+.item_list{
+	width: 100%;
+	max-height: 75%;
+	font-weight: bold;
+
+}
+.zoom_img{
+	width: 130%;
+}
+
+.cat_title{
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+}
+.cat_title_2{
+	font-size: small;
+	font-weight: bold;
+	text-align: center;
+}
+.navi_bar{
+	background-color:#8ef574;
+	position: fixed;
+	
+}
+.space{
+	padding: 40px;
+}
+.popup_item{
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%) scale(0);
+	border:1px solid black;
+	border-radius: 10px;
+	z-index: 10;
+	background-color: rgb(204, 212, 184);
+	width: 300px;
+	max-width: 50%;
+	transition:300ms ease-in-out;
+}
+.popup_item_h{
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid black;
+	font-size: medium;
+	font-weight: bold;
+	
+}
+.popup_item_b{
+	padding: 10px 15px;
+	font-size: small;
+	font-weight: bold;
+	
+}
+.popup_item_buttions{
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.popup_item_buttions_2{
+	padding: 5px 5px;
+	display: flex;
+	justify-content: space-between;
+	width:200px; 
+	height: 30px;
+	border-radius: 8px;
+	background-color: #e1f14d;
+	font-weight: bold;
+}
