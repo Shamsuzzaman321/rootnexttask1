@@ -8,3 +8,55 @@ body {
 	border-radius: 5px;
 	text-align: center;
 }
+a:link, a:visited { color:#030964; font-weight: bold; text-decoration: none;} 
+a:active, a:hover { color:#030964; text-decoration: none;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	margin: auto;
+	padding: 1px;	
+}
+
+table {
+	margin: auto;
+	padding: 3px;
+	line-height: 2;
+	font-family:  Arial;
+	font-size: medium;
+	border: #2d2b29;
+	text-align: center;
+	width: 100%;
+	
+}
+
+th{
+	border-radius: 10px ;
+	background-color:#4ecc21;
+}
+td{
+	border-radius: 7px;
+}
+#cart{
+	color: rgb(56, 8, 145);
+	font-size: large;
+}
+input {
+    font-family: Verdana;
+    font-size: medium;
+	background-color: #afdd9f;
+	border-radius: 5px;
+}
+select {
+    font-family: Verdana;
+    font-size: medium;
+    font-style: italic;
+	font-weight: bold;
+}
+h3 {
+	margin:auto;
+}
