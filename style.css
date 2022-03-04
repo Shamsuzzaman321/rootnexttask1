@@ -4,8 +4,8 @@ body {
 	line-height: 1.5em;
 	font-family: Verdana, Arial, san-serif;
 	font-size:15px;
-	background: #e4f2e1;
-	border-radius: 5px;
+	background: #cc0000;
+	border-radius: 5rem;
 	text-align: center;
 }
 a:link, a:visited { color:#030964; font-weight: bold; text-decoration: none;} 
